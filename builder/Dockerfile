@@ -18,4 +18,4 @@ rm -rf /var/cache/apk/*
 ENV device=/dev/mydevice 
 ENV baud=115200 
 
-ENTRYPOINT  minicom -D $device -b $baud 
+CMD  minicom -D $device -b $baud 
