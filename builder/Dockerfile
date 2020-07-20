@@ -4,10 +4,10 @@
 ############################################################
 
 # Set the base image to alpine
-FROM alpine
+FROM arm32v7/alpine:latest
 
 # File Author / Maintainer
-MAINTAINER yoni davidson
+MAINTAINER Garrett Green
 
 # Update the repository sources list
 RUN apk update  && \ 
