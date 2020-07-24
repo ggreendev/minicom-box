@@ -11,11 +11,11 @@ MAINTAINER Garrett Green
 
 # Update the repository sources list
 RUN apk update  && \ 
-apk add minicom && \
+apk add screen && \
 rm -rf /tmp/src && \
 rm -rf /var/cache/apk/*  
 
 ENV device=/dev/mydevice 
 ENV baud=115200 
 
-CMD  minicom -D $device -b $baud 
+CMD  screen $device $baud 
